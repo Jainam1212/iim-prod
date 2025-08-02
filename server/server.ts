@@ -11,10 +11,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: [
-    'https://infra-india-mart-production-365912dye.vercel.app',
-    'https://www.infraindiamart.com'
-  ]
+  origin: '*'
 }));
 app.use(compression());
 app.use(express.json());
