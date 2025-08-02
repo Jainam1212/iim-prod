@@ -10,7 +10,12 @@ import {appRouter} from './router.ts'
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://infra-india-mart-production-365912dye.vercel.app',
+    'https://www.infraindiamart.com'
+  ]
+}));
 app.use(compression());
 app.use(express.json());
 

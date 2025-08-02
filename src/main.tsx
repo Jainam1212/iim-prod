@@ -8,7 +8,7 @@ const client = new QueryClient();
 const trpcClient = trpc.createClient({
   links: [
     httpBatchLink({
-      url: "http://localhost:4000/trpc",
+      url: "https://iim-prod.onrender.com/trpc",
     }),
   ],
 });
