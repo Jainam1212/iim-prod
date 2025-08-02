@@ -9,7 +9,7 @@
   "lint": "eslint .",
   "preview": "vite preview",
   "dev:server": "nodemon --ext ts --exec ts-node --esm server/server.ts",
-  "start": "node --loader ts-node/esm server/server.ts"
+  "start": "node --import ts-node/register server/server.ts"
 },
   "dependencies": {
     "@emotion/react": "^11.14.0",

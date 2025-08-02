@@ -19,14 +19,16 @@ app.use("/trpc", createExpressMiddleware({ router: appRouter }));
 
 const PORT = process.env.PORT || 4000;
 
-try {
-  connectToDatabaseIIM();
-} catch (error) {
-  console.log('database error',error);
-}
+(async () => {
+  try {
+    await connectToDatabaseIIM();
+    console.log("✅ Database connected");
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-});
-
-// export type AppRouter = typeof appRouter;
+    app.listen(PORT, () => {
+      console.log(`🚀 Server running on port ${PORT}`);
+    });
+  } catch (error) {
+    console.error("❌ Database connection failed", error);
+    process.exit(1); // Stop if DB fails
+  }
+})();
