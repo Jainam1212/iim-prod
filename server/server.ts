@@ -4,11 +4,11 @@ import cors from "cors";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 // import { z } from "zod";
 import dotenv from "dotenv";
-import {connectToDatabaseIIM} from './database/database.ts';
+import {connectToDatabaseIIM} from './database/database';
 import compression from 'compression';
 // import {inquireNow} from './utils/inquireNowForm.ts';
 // import {fetchMoreInfo} from './database/retrieveMoreInfo.ts'
-import {appRouter} from './router.ts'
+import {appRouter} from './router'
 
 
 dotenv.config();
