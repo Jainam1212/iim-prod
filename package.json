@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
-    "dev:server": "nodemon --ext ts --exec ts-node server/server.ts",
-    "build": "npm run build:server && npm run build:client",
-    "build:server": "tsc -p tsconfig.server.json",
-    "build:client": "vite build",
-    "start": "node dist-server/server.js"
-  },
+  "dev": "vite --host",
+  "build": "tsc -b && vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "dev:server": "nodemon --ext ts --exec ts-node --esm server/server.ts",
+  "start": "node --loader ts-node/esm server/server.ts"
+},
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",

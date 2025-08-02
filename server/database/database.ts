@@ -1,3 +1,20 @@
+import dotenv from 'dotenv';
+import mongoose from 'mongoose';
+
+dotenv.config();
+
+const uri = process.env.DATABASE_URI as string;
+
+export const connectToDatabaseIIM = async () => {
+  try {
+    await mongoose.connect(uri);
+    console.log("✅ Successfully connected to MongoDB!");
+  } catch (err) {
+    console.error("❌ Failed to connect to MongoDB:", err);
+  }
+};
+
+
 
 // import { MongoClient, ServerApiVersion } from 'mongodb';
 // const uri = "mongodb+srv://jainamkp12:xpuMnj90nbSeJtZp@moreinfo.ofvf1.mongodb.net/?retryWrites=true&w=majority&appName=moreInfo";
@@ -23,19 +40,3 @@
 // run().catch(console.dir);
 
 
-
-import dotenv from 'dotenv';
-import mongoose from 'mongoose';
-
-dotenv.config();
-
-const uri = process.env.DATABASE_URI as string;
-
-export const connectToDatabaseIIM = async () => {
-  try {
-    await mongoose.connect(uri);
-    console.log("✅ Successfully connected to MongoDB!");
-  } catch (err) {
-    console.error("❌ Failed to connect to MongoDB:", err);
-  }
-};

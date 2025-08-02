@@ -1,7 +1,7 @@
 import { initTRPC } from "@trpc/server";
 import { z } from "zod";
-import {inquireNow} from './utils/inquireNowForm';
-import {fetchMoreInfo} from './database/retrieveMoreInfo'
+import {inquireNow} from './utils/inquireNowForm.ts';
+import {fetchMoreInfo} from './database/retrieveMoreInfo.ts'
 const t = initTRPC.create();
 
 export const appRouter = t.router({
