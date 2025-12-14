@@ -21,7 +21,7 @@ export function CementCompanyList(props:CementProps) {
           const separator = target.includes("?") ? "&" : "?";
           const finalPath = `${target}${separator}loc=${encodeURIComponent(loc)}`;
     
-          console.log("Navigating to:", finalPath);
+          // console.log("Navigating to:", finalPath);
           navigate(finalPath);
         } catch (error) {
           console.error("Invalid URL in handleMoreInfo:", error);

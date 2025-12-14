@@ -64,16 +64,16 @@ export const FooterSection = ()=>{
           <h3 className="text-xl font-semibold mb-4">Connect With Us</h3>
           <div className="flex space-x-4">
             <a href="#" aria-label="Facebook">
-              <Facebook className="w-5 h-5" />
+              <Facebook className="w-5 h-5 bg-white text-black rounded text-xl" />
             </a>
             <a href="#" aria-label="Instagram">
-              <Instagram className="w-5 h-5" />
+              <Instagram className="w-5 h-5 bg-white text-black rounded text-xl" />
             </a>
             <a href="#" aria-label="Twitter">
-              <X className="w-5 h-5" />
+              <X className="w-5 h-5 bg-white text-black rounded text-xl" />
             </a>
             <a href="#" aria-label="LinkedIn">
-              <Linkedin className="w-5 h-5" />
+              <Linkedin className="w-5 h-5 bg-white text-black rounded text-xl" />
             </a>
           </div>
         </div>
@@ -81,8 +81,8 @@ export const FooterSection = ()=>{
         {/* Contact & Subscribe */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-          <p className="text-sm mb-2">📞 +91 9876543210</p>
-          <p className="text-sm mb-4">📧 support@mycompany.com</p>
+          <p className="text-sm mb-2">📞 +91 9099180208 | 9173822567</p>
+          <p className="text-sm mb-4">📧 info@infraindiamart.com | infraindiamart@gmail.com</p>
 
           <h4 className="text-md font-semibold mb-2">
             Subscribe for WhatsApp Updates

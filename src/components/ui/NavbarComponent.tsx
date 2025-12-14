@@ -18,9 +18,9 @@ const components: { title: string; href: string }[] = [
   { title: "About Us", href: "/iim/#AboutUsSection" },
   { title: "Our Strengths", href: "/iim/#OurStrengthSection" },
   { title: "Progress", href: "/iim/#StatSection" },
-  { title: "FAQs", href: "/iim/#FrequentlyAskedQuestionsSection" },
-  { title: "Tabs", href: "/docs/primitives/tabs" },
-  { title: "Tooltip", href: "/docs/primitives/tooltip" },
+  // { title: "FAQs", href: "/iim/#FrequentlyAskedQuestionsSection" },
+  // { title: "Tabs", href: "/docs/primitives/tabs" },
+  // { title: "Tooltip", href: "/docs/primitives/tooltip" },
 ];
 
 export const Navbar = () => {
@@ -36,7 +36,7 @@ export const Navbar = () => {
 
     const sectionId = target.split("#")[1];
     const pageId = target.split("#")[0];
-    console.log('section n page',sectionId,'   ',pageId);
+    // console.log('section n page',sectionId,'   ',pageId);
     
     const targetElement = document.getElementById(sectionId);
 
