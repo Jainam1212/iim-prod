@@ -79,11 +79,13 @@ export const FooterSection = ()=>{
         </div>
 
         {/* Contact & Subscribe */}
-        <div>
+        <div className="w-max">
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-          <p className="text-sm mb-2">📞 +91 9099180208 | 9173822567</p>
+          <p className="text-sm mb-2">📞 +91 9099&nbsp;180&nbsp;208 | 9173&nbsp;822&nbsp;567</p>
           <p className="text-sm mb-4">📧 info@infraindiamart.com | infraindiamart@gmail.com</p>
-
+            <p className="text-sm mb-4">
+                  305, Shivam Arcade, near S.P. Ringroad, Hanspura, Ahmedabad.
+                </p>
           <h4 className="text-md font-semibold mb-2">
             Subscribe for WhatsApp Updates
           </h4>

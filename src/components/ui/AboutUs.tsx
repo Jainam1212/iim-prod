@@ -49,7 +49,7 @@ const ScrollVideoAbout = () => {
 
         {/* Image */}
         <img
-          className="w-full sm:w-3/4 md:w-2/3 lg:w-1/3 object-contain p-2 m-auto"
+          className="w-full sm:w-3/4 md:w-2/3 lg:w-1/3 object-contain p-2 m-auto scale-150"
           style={{ aspectRatio: "4 / 3" }}
           src="/images/india.avif"
           alt="India Map"
