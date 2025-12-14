@@ -57,7 +57,7 @@ export const ContactUsPage = () => {
               <div>
                 <h3 className="font-semibold">Location</h3>
                 <p className="text-sm text-gray-600">
-                  123 Infra Street, Building Block A, Gujarat
+                  305, Shivam Arcade, near S.P. ringroad, Hanspura, Ahmedabad.
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ export const ContactUsPage = () => {
               <Phone className="text-blue-600 mt-1" />
               <div>
                 <h3 className="font-semibold">Phone</h3>
-                <p className="text-sm text-gray-600">+91 98765 43210</p>
+                <p className="text-sm text-gray-600">+91 9099180208</p>
               </div>
             </div>
 
